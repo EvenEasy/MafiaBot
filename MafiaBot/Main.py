@@ -9,6 +9,12 @@ client = commands.Bot(command_prefix='$')
 
 @client.event
 async def on_ready():
+    File = open("Players", "r+")
+    File.truncate(0)
+    File.close()
+    ListRoles = open("RolesMafia", "r+")
+    ListRoles.truncate(0)
+    ListRoles.close()
     File = open("Players", "r")
     Players = []
     for line in File:

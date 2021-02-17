@@ -23,7 +23,12 @@ async def on_ready():
 
     print('Bot is Connected!')
 
-@client.command(aliases = ['sut_up', 'commands'])
+@client.event
+async def on_member_joid(memder):
+    channel = client.get_channel(779697732746739712)
+    await channel.send(member.mention + " :grey_exclamation: **Welcome**")
+
+@client.command(aliases = ['set_up', 'commands'])
 async def set_up(ctx):
     await ctx.author.send(f'**Привет)))**\nЯ Emma, и я Мафия БОТ:3\nвот Список Комманд')
     emd = discord.Embed(title='Commands:')

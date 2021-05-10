@@ -1,0 +1,11 @@
+{
+    "GameInfo": {
+        "Is Started": false,
+        "Selected": "Mafia",
+        "Quantity Players": 0,
+        "Quantity Mafias": 0,
+        "Is End": false
+    },
+    "Players": {},
+    "Players Mention": {}
+}

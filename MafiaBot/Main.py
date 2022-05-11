@@ -7,6 +7,8 @@ from discord.ext import commands
 from discord.utils import get
 import random
 
+token = "OTUxNTQ0ODI5MDg1NjMwNDc0.GNnQtQ.Vxe_smowF0ZZWUkmMxGOY-SwUpA1DyRJrd3_tQ"
+
 client = commands.Bot(command_prefix='$')
 
 @client.event
